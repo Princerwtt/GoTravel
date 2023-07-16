@@ -1,0 +1,89 @@
+    .bb{
+      background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+      background-size: cover; 
+      background-position: center;
+      background-repeat: no-repeat; 
+      max-width: 1500px !important;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .head1 h1 {
+      font-size: 36px;
+      text-align: center;
+      color:black;
+      margin-bottom: -24px;
+    }
+
+    .bl{
+      color: blue;
+      font-size: 23px;
+
+    }
+    
+    .container3 {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+    }
+    
+    .contact-info3 {
+      flex: 1;
+      color: black;
+    }
+    
+    .contact-info3 h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      margin-top:0px;
+    }
+    
+    .contact-info3 p {
+      margin-bottom: 10px;
+      
+    }
+    
+    .contact-form3 {
+      flex: 1;
+      border-radius: 5px; 
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 40px;
+      width: 25%;
+      padding-bottom: 40px;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    
+    .contact-form3 label {
+      display: block;
+      margin-bottom: 10px;
+      color: black;
+      font-size: 18px
+    }
+    
+    .contact-form3 input[type="text"] ,
+    .contact-form3 input[type="email"] {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    
+    .contact-form3 button {
+      background-color: #4CAF50;
+      color: black;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: max-content;
+      margin-left: 0px;
+    }
+    
