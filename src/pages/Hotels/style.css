@@ -1,40 +1,68 @@
-.h-search-div{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 5px;
-    background: whitesmoke;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    margin: 2rem 0 ;
-    height: 3rem;
-}
-
-.h-hotel{
-    font-family: sans-serif;
-    border-radius: 5px;
-    background: whitesmoke;
-    margin: 0 8rem;
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
- }
-
- .h-hotel-content-div{
+.searchDiv{
     display: flex;
     flex-direction: column;
- }
+    align-items: center;
+    background: whitesmoke;
+    border-radius: 5px;    
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    font-family: sans-serif;
+    margin-left: 10px;
+}
 
- .h-hotel-search-item{
-    border:1px solid lightgrey;
-    padding: 2rem;
-    border-radius: 8px;
+.exploreDiv{
+    font-family: sans-serif;
+    width: fit-content;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    margin : 0 1rem;
+    border-radius: 5px;
+    border: none !important;
+    background: whitesmoke;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    /* overflow-y: scroll; */
+ }
+ 
+.abcd{
+    display: flex;
+    justify-content: center !important;
+}
+
+.exploreHeading h1{
+    margin-left: 375px !important;
+}
+
+.contentDiv{
+    margin: 0 3rem;
+    background: #423f3e !important;
+    overflow-y: scroll;
+}
+
+
+.hrTag{
+    width: 60rem;
+    height: 0.2rem;
+    background: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+.searchItem{
+    border:5px solid lightgrey;
+    background: white;
+    width: fit-content !important;
+    padding: 5px;
+    border-radius: 20px;
     display:flex;
     justify-content: space-between;
-    gap:1rem;
-    margin: 2rem 10rem;
+    gap:20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
- 
+
 .siImg{
     width: 200px;
     height:200px;
@@ -46,11 +74,12 @@
 }
 
 .siDesc{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 250px;
-    margin-bottom: 10px;
+    gap: 1px; */
+    max-width: 190px;
+    margin-bottom: 1px;
+    border-right:5px solid lightgrey;
 }
 
 .siTitle {
@@ -62,6 +91,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 25px;
+    margin-right: 25px;
 }
 .silocation{
     background-color: #008009;
@@ -92,17 +122,17 @@
 }
 
 .siDetailTexts{
-    text-align: right;
+    text-align: left;
     display: flex;
     flex-direction: column;
     gap:5px;
 
 }
 .siPrice{
-    font-size: 24px;
+    font-size: 15px;
 }
 .siTaxOp{
-    font-size:15px;
+    font-size:13px;
     color:gray;
 }
 .siCheckButton{
@@ -114,11 +144,93 @@
     border-radius: 5px;
 }
 
+.co{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+.abcde{
+    display: flex;
+}
+.inputCity{
+    width: 97%;
+}
 
-.hrTag{
-    width: 60rem;
-    height: 0.2rem;
-    background: black;
-    border-radius: 50%;
-    border: 1px solid black;
+.siDesc2{
+    /* display: flex;
+    flex-direction: column;
+    gap: 1px; */
+    max-width: 150px;
+    margin-bottom: 1px;
+    margin-top: 5px;
+    border-right:5px solid lightgrey;
+    padding: 10px;
+}
+
+.siTitle2{
+    font-size: 15px;
+}
+.sihills2{
+    font-size: 15px;
+}
+.sirooms2{
+    font-size: 15px;
+}
+.sidistance2{
+    font-size: 15px;
+}
+.sicancel2{
+    font-size: 15px;
+    color: #008009;
+}
+.sifacilities{
+    font-size: 13px;
+}
+
+.SearchHotel{
+    justify-content: center !important;
+}
+
+.filterSection{
+    justify-content: center !important;
+    margin:5px;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+}
+.inputCity{
+  width: 13.2rem;
+  height: 20px;
+  padding: 5px;
+  border: 5px solid #ccc
+}
+.check{
+    width:6rem;
+    height: 20px;
+    padding: 5px;
+    border: 5px solid #ccc
+}
+.inputRooms{
+  width: 8rem;
+  height: 20px;
+  padding: 5px;
+  border: 5px solid #ccc
+}
+.inputRating{
+    width: 10rem;
+    height: 40px;
+    padding: 5px;
+    border: 5px solid #ccc;
+}
+.siCouple{
+    width: 10rem;
+    height: 40px;
+    padding: 5px;
+    border: 5px solid #ccc;  
+}
+.siDistanceAp{
+    width: 10rem;
+    height: 40px;
+    padding: 5px;
+    border: 5px solid #ccc; 
 }

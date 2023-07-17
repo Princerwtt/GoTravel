@@ -25,6 +25,7 @@ const MapboxMap = () => {
       map.remove(); // Clean up the map instance when the component unmounts
     };
   }, []);
+  
 
   return <div id="map" style={{ height: '400px' }}></div>;
 };

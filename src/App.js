@@ -15,11 +15,15 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import Copyright from './pages/Copyright';
 import { useState } from "react"
 import Package from './pages/Package';
+import BusBooking from './pages/BusBooking';
+
+import CardDetails from './components/CardDetails';
+
 
 function App() {
 
-  const [startPlanning, setStartPlanning] = useState(''); // State variable to store the signed-in user
-
+  const [startPlanning, setStartPlanning] = useState('');
+  
   return (
     <>
       <BrowserRouter>
@@ -27,11 +31,14 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
+          <Route path='/home/:id' element={<CardDetails />} />
           <Route path="/package" element={<Package />} />
           <Route path="/package/:id" element={<PackageDetails />} />
           <Route path='/travelguides' element={<TravelGuides />} />
+          <Route path='/travelguides/:id' element={<CardDetails />} />
           <Route path='/hotels' element={<Hotels />} />
           <Route path='/aboutus' element={<AboutUs />} />
+          <Route path='/busbooking' element={<BusBooking/>} />
           <Route path='/contactus' element={<ContactUs />} />
           <Route path='/plannewtrip' element={<PlanNewTrip setStartPlanning={setStartPlanning} startPlanning={startPlanning} />} />
           <Route path='/profile' element={<Profile />} />

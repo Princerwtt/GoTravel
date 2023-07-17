@@ -4,15 +4,16 @@ import { Link } from 'react-router-dom'
 import Footer from '../../components/Footer';
 import { useAuth0 } from '@auth0/auth0-react';
 function Home() {
+
   const { isAuthenticated } = useAuth0();
   const [place, setPlace] = useState(null);
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/Princerwtt/imdb-test/main/db.json')
+    fetch('https://raw.githubusercontent.com/Princerwtt/imdb-test/main/place.json')
       .then(response => response.json())
       .then(data => {
         setPlace(data.place);
-        console.log(data.place[0].attributes.name);
+        console.log(data.place.name);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
@@ -23,14 +24,13 @@ function Home() {
     return <div>Loading...</div>;
   }
 
-
   return (
     <>
       <br />
       <section>
         <div>
           <div className='new-trip-btn' >
-          {isAuthenticated && ( // Conditionally render the button only if the user is authenticated
+            {isAuthenticated && (
               <Link to='/plannewtrip' className='btn-link'>
                 <button className='btn-pnt'>+ Plan new trip</button>
               </Link>
@@ -40,18 +40,16 @@ function Home() {
         </div>
         <br />
         <div>
-
-
           <div className='hotel-search' >
             <div className='hotel-heading' >
-              <h2>Need a place to stay?</h2>
+              <h2 style={{background:'#423F3E'}} >Need a place to stay?</h2>
             </div>
             <div className='search-option' >
-              <div>
+              <div style={{background:'#423F3E'}} >
                 <input type="text" placeholder='Enter city name' className='input-city' />
               </div>
-              <div>
-                <Link to='/hotels'>
+              <div style={{background:'#423F3E'}} >
+                <Link to='/hotels' style={{background:'#423F3E'}} >
                   <button className='search-booking' >Search for bookings</button>
                 </Link>
               </div>
@@ -61,16 +59,17 @@ function Home() {
         <br />
         <div className='explore-div'>
           <div className='explore-heading'>
-            <h1>Explore the Popular destination</h1>
+            <h1 style={{background:'#423F3E'}} >Explore the Popular destination</h1>
           </div>
+          <br />
           <div className='content-div'>
             <div className='main'>
               {place.map(item => (
-                <div key={item.id} className='name-img-p-div' >
-                  <h2>{item.attributes.name}</h2>
-                  <img src={item.attributes.image} alt={item.attributes.name} className='image' />
-                  <p>{item.attributes.description}</p>
-                </div>
+                <Link to={`/home/${item.id}`} key={item.id} className='name-img-p-div' style={{textDecoration: 'none'}} >
+                  <h2 style={{background:'#2B2B2B'}} >{item.name}</h2>
+                  <img src={item.image} alt={item.name} className='image' />
+                  {/* <p style={{background:'#2B2B2B'}} >{item.description}</p> */}
+                </Link>
               ))}
             </div>
           </div>
@@ -82,6 +81,7 @@ function Home() {
       <hr className='hr-tag' />
       <br />
       <Footer />
+      <br />
     </>
   )
 }

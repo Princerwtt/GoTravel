@@ -15,17 +15,7 @@ const Profile = () => {
     setSubmitted(true);
   };
 
-  // const handleInputChange = (event) => {
-  //   if (!submitted && !editing) {
-  //     setName(event.target.value);
-  //   }
-  // };
-
-  // const handleInputChange2 = (event) => {
-  //   if (!submitted && !editing) {
-  //     setEmail(event.target.value);
-  //   }
-  // };
+ 
 
   const handleInputChange3 = (event) => {
     if (!submitted && !editing) {
@@ -49,11 +39,7 @@ const Profile = () => {
     <div className="container">
       <div className="profile">
         <div className="profileCard">
-          {/* <img
-            src="https://i0.wp.com/www.worth.com/wp-content/uploads/2022/04/img_avatar.png?fit=499%2C498&ssl=1"
-            className="profileimage"
-            alt="Avatar"
-          /> */}
+       
           {user && <img src={user.picture} alt="User Profile" />}
           {/* <h2>Shivam Kumar</h2> */}
           {user && <div>{user.name}</div>}
@@ -72,13 +58,7 @@ const Profile = () => {
             <p>Full Name:</p>
             <div className="inputcss">
               <form onSubmit={handleSubmit}>
-                {/* <input
-                  type="text"
-                  value={name}
-                  onChange={handleInputChange}
-                  disabled={submitted && !editing}
-                  placeholder="name"
-                /> */}
+               
                 {user && <div>{user.name}</div>}
                 {console.log(user)}
               </form>
@@ -89,13 +69,7 @@ const Profile = () => {
             <p>Email Id:</p>
             <div className="inputcss">
               <form onSubmit={handleSubmit}>
-                {/* <input
-                  type="email"
-                  value={email}
-                  onChange={handleInputChange2}
-                  disabled={submitted && !editing}
-                  placeholder="email"
-                /> */}
+                
                 {user && <div>{user.email}</div>}
               </form>
             </div>
@@ -172,30 +146,3 @@ const Profile = () => {
 
 export default Profile;
 
-// {isAuthenticated ? (
-//     <div className='pages-name'>
-//       {/* Display user name if authenticated */}
-//       <div>{'Welcome ' + user.name}</div>
-      
-//       <button className='dropdown-button' onClick={toggleDropdown}>
-//         More
-//       </button>
-//       {showDropdown && (
-//         <div className='dropdown-menu'>
-//           <Link to='/profile' id='pages-name' className='dropdown-item'>
-//             Profile
-//           </Link>
-//           <button className='dropdown-item' onClick={() => logout({ returnTo: window.location.origin })}>
-//             Log Out
-//           </button>
-//         </div>
-//       )}
-//     </div>
-//   ) : (
-//     <div className='pages-name'>
-//       {/* Login button */}
-//       <button className='login-button' onClick={() => loginWithRedirect()}>
-//         Log In
-//       </button>
-//     </div>
-//   )}

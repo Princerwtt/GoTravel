@@ -1,8 +1,11 @@
 .pp-main-container{
     margin: 2rem;
     font-family: sans-serif;
+    color: whitesmoke;
 }
 
 .pp-head-para{
     margin: 0 2rem;
+    font-family: sans-serif;
+    color: whitesmoke;
 }

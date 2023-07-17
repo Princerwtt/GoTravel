@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import './style.css';
-// import { Link } from 'react-router-dom';
 
 function StartPlanning(props) {
 
@@ -23,28 +21,8 @@ function StartPlanning(props) {
     return <div>Loading...</div>;
   }
 
-  const handleSearch = event => {
-    setQuery(event.target.value);
-  };
-
   return (
     <>
-      <br />
-      <div>
-        <div className='search-div'>
-          <h2>Search your Holiday</h2>
-          <div>
-            <input className='input-city' onChange={handleSearch} value={props.name} />
-          </div>
-          <br />
-          {/* <div>
-            <Link to='/' >
-              <button>plan a trip</button>
-            </Link>
-          </div> */}
-        </div>
-      </div>
-
       <div className='explore-div'>
         <div className='explore-heading'>
           <h1>Explore the Popular destination</h1>

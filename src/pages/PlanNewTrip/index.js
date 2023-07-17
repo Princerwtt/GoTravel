@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import './style.css';
-import {Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 export default function PlanNewTrip(props) {
 
-  // const history = useHistory();
   const [placename, setPlacename] = useState('');
   const handleStartplanning = () => {
-    if (placename === 'taj') {
+    if (placename === 'jammu' || placename === 'kashmir' || placename === 'shimla' || placename === 'manali' || placename === 'chandigarh' || placename === 'delhi' || placename === 'jaipur' || placename === 'lucknow' || placename === 'banaras' || placename === 'mumbai' || placename === 'goa' || placename === 'nainital') {
       props.setStartPlanning(placename);
       
   }};
@@ -17,13 +16,29 @@ export default function PlanNewTrip(props) {
   };
 
   if (props.startPlanning) {
-    // return history.push('/startplanning');
     return <Navigate to="/startplanning" target="_blank" />
-  } else {
+  }
+  else{
     return (
       <>
-        <input  value={placename} onChange={handlePlacenameChange} placeholder="enter the city name"/>
-        <button onClick={handleStartplanning}>Start Planning</button>        
+        <div className='pnt-big-div-container'>
+          <div className='pnt-main-container' >
+            <div style={{background:'#423F3E'}} >
+              <h1 style={{background:'#423F3E'}} >Plan a new trip</h1>
+            </div>
+            <div style={{background:'#423F3E'}} >
+              <input  value={placename} onChange={handlePlacenameChange} placeholder="Enter the city name" className='input-city'/>
+              {/* <input type="text" placeholder='Enter city name'  /> */}
+            </div>
+            <br />
+            <div style={{background:'#423F3E'}} >
+              <button onClick={handleStartplanning} className='search-booking'  >Start Planning</button>
+              {/* <button >Search for bookings</button>         */}
+            </div>
+          </div>
+        </div>
+        
+        
       </>
     );
   }

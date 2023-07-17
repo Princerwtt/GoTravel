@@ -1,42 +1,19 @@
-.pnt-main{
-    margin: 4rem 25rem;
-    background: whitesmoke;
-    display: flex;
-    justify-content: center;
-    /* align-items: center !important; */
-    border-radius: 5px;    
-    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
-
-.pnt-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.pnt-heading{
-    display: flex;
-    justify-content: center;
-}
-
-.pnt-date{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.pnt-date-inputs{
+.pnt-big-div-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30rem;
+    font-family: sans-serif;
 }
 
-.pnt-date-input{
-    height: 1rem;
-}
-
-.pnt-button{
+.pnt-main-container{
+    background: #423F3E;
+    width: 37rem;
+    height: 20rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
 }
