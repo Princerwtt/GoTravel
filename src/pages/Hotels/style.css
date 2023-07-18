@@ -4,7 +4,7 @@
     align-items: center!important;
     /* background: whitesmoke; */
     border-radius: 5px;    
-    /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
+    /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096); */
     font-family: sans-serif;
     margin-left: 10px;
     height:10vh;
@@ -27,7 +27,7 @@
     border-radius: 1px;
     border: none !important;
     background: whitesmoke;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096);
  }
  
  
@@ -73,7 +73,7 @@
     margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
-    /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
+    /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096); */
 }
 
 .siImg{
@@ -93,7 +93,7 @@
 }
 
 .siTitle h2{
-    color:#0071c2;
+    color:#f75940 !important;
     text-decoration:none;
 }
 .siDetails{
@@ -147,7 +147,7 @@
     color:gray;
 }
 .siCheckButton{
-    background-color: #0071c2;
+    background-color: #f75940 !important;
     color: white;
     font-weight: bold;
     padding:10px 10px 5px 5px;
@@ -156,7 +156,7 @@
 }
 .siCheckButton:hover {
     transform: scale(1.1);
-    background-color:lightgreen;
+    background-color:skyblue;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -215,10 +215,11 @@
     background: whitesmoke;
     width: 180px !important;
     height:60vh;
+    font-family: sans-serif;
     border-radius: 5px;
     display:flex;
     justify-content: space-between;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096);
 }
 
 .inputCity{
@@ -229,7 +230,7 @@
 }
 .inputCity:hover {
     transform: scale(1.1);
-    background-color:lightgreen;
+    background-color:skyblue;
     transition: transform 0.3s ease-in-out;
   }
 .check{
@@ -240,7 +241,7 @@
 }
 .check:hover {
     transform: scale(1.1);
-    background-color:lightgreen;
+    background-color:skyblue;
     transition: transform 0.3s ease-in-out;
   }
 .inputRooms{
@@ -251,7 +252,7 @@
 }
 .inputRooms:hover {
     transform: scale(1.1);
-    background-color:lightgreen;
+    background-color:skyblue;
     transition: transform 0.3s ease-in-out;
   }
 .inputRating{
@@ -263,7 +264,7 @@
 }
 .inputRating:hover {
     transform: scale(1.1);
-    background-color:lightgreen;
+    background-color:skyblue;
     transition: transform 0.3s ease-in-out;
   }
 .siCouple{
@@ -275,7 +276,7 @@
 }
 .siCouple:hover {
     transform: scale(1.1);
-    background-color:lightgreen;
+    background-color:skyblue;
     transition: transform 0.3s ease-in-out;
   }
 .siDistanceAp{
@@ -287,7 +288,7 @@
 }
 .siDistanceAp:hover {
     transform: scale(1.1);
-    background-color:lightgreen;
+    background-color:skyblue;
     transition: transform 0.3s ease-in-out;
   }
 .siAbcd{
@@ -302,7 +303,7 @@
 }
 
 .sortButton{
-    background-color: #0071c2;
+    background-color: #f75940 !important;
     color: white;
     font-weight: bold;
     padding:10px 10px 5px 5px;
@@ -316,12 +317,12 @@
 }
 .sortButton:hover {
     transform: scale(1.1);
-    background-color:lightgreen;
+    background-color:skyblue;
     transition: transform 0.3s ease-in-out;
   }
 
   .clearButton{
-    background-color: #0071c2;
+    background-color: #f75940 !important;
     color: white;
     font-weight: bold;
     padding:10px 10px 5px 5px;
@@ -334,7 +335,7 @@
   }
   .clearButton:hover {
     transform: scale(1.1);
-    background-color:lightgreen;
+    background-color:skyblue;
     transition: transform 0.3s ease-in-out;
   }
 

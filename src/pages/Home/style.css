@@ -83,12 +83,6 @@
     transform: scale(1.2);
 }
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> main
 .explore-div{
     font-family: sans-serif;
     display: flex;
@@ -139,7 +133,7 @@
     padding: 1rem 1rem;
     text-decoration: none;
     background: white;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096);
     transition: 0.4s;
 }
 

@@ -3,7 +3,7 @@
     margin: auto;
     width: 100%;
     height: 500px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096);
    }
    .centered-div {
     text-align: center;
@@ -18,5 +18,5 @@
     bottom: 20px;
     left: 20px;
     z-index: 1;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096);
   }

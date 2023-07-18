@@ -5,12 +5,12 @@ function StartPlanning(props) {
   const [query, setQuery] = useState(props.name || '');
   const [place, setPlace] = useState(null);
 
-  useEffect(() => {
-    fetch('https://raw.githubusercontent.com/Princerwtt/imdb-test/main/db.json')
+   useEffect(() => {
+    fetch('https://raw.githubusercontent.com/Princerwtt/imdb-test/main/place.json')
       .then(response => response.json())
       .then(data => {
         setPlace(data.place);
-        console.log(data.place[0].attributes.name);
+        console.log(data.place.name);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
@@ -33,16 +33,16 @@ function StartPlanning(props) {
               .filter(item => {
                 if (query === '') {
                   return item;
-                } else if (item.attributes.name.toLowerCase().includes(query.toLowerCase())) {
+                } else if (item.address.toLowerCase().includes(query.toLowerCase())) {
                   return item;
                 }
                 return null;
               })
               .map(item => (
                 <div key={item.id} className='name-img-p-div'>
-                  <h2>{item.attributes.name}</h2>
-                  <img src={item.attributes.image} alt={item.attributes.name} className='image' />
-                  <p>{item.attributes.description}</p>
+                  <h2>{item.name}</h2>
+                  <img src={item.image} alt={item.name} className='image' />
+                  <p>{item.description}</p>
                 </div>
               ))}
           </div>

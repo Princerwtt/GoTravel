@@ -12,6 +12,9 @@ function Navigation() {
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
+  const closeDropdown = () => {
+    setShowDropdown(false);
+  };
 
   return (
     <>
@@ -53,8 +56,8 @@ function Navigation() {
         <div className="pages"  >
           {
             isAuthenticated ? (
-              <div className="dropdown">
-                <button className="dropdown-toggle" onClick={toggleDropdown}>
+              <div className="dropdown" onMouseLeave={closeDropdown}>
+                <button className="dropdown-toggle" onMouseEnter={toggleDropdown}>
                   {'Welcome ' + user.name} &#x25BC;
                 </button>
                 {showDropdown && (
@@ -62,6 +65,11 @@ function Navigation() {
                     <li>
                       <Link to="/profile" className="pages-name dropdown-item">
                         Profile
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/busbooking" className="pages-name dropdown-item">
+                        Bus Booking
                       </Link>
                     </li>
                     <li>
