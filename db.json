@@ -1,0 +1,104 @@
+{
+  "place": [
+    {
+      "type": "tourist-spot",
+      "id": "1",
+      "attributes": {
+        "name": "Taj Mahal",
+        "description": "The Taj Mahal is an iconic white marble mausoleum in Agra. It was built by the Mughal emperor Shah Jahan in memory of his wife Mumtaz Mahal.",
+        "address": "Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh 282001",
+        "image": "https://en.wikipedia.org/wiki/Taj_Mahal#/media/File:Taj_Mahal,_Agra,_India_edit3.jpg"
+      }
+    },
+    {
+      "type": "tourist-spot",
+      "id": "2",
+      "attributes": {
+        "name": "Jaipur",
+        "description": "Jaipur, known as the Pink City, is the capital of the Indian state of Rajasthan. It is famous for its magnificent palaces, forts, and vibrant markets.",
+        "address": "Jaipur, Rajasthan",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/HawaMahal-Jaipur.jpg"
+      }
+    },
+    {
+      "type": "tourist-spot",
+      "id": "3",
+      "attributes": {
+        "name": "Kerala Backwaters",
+        "description": "The Kerala Backwaters is a network of interconnected canals, rivers, and lakes. It offers scenic boat rides and a glimpse into the peaceful rural life of Kerala.",
+        "address": "Kerala",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Houseboats_at_Kerala_Backwaters.jpg"
+      }
+    },
+    {
+      "type": "tourist-spot",
+      "id": "4",
+      "attributes": {
+        "name": "Varanasi",
+        "description": "Varanasi, also known as Benaras or Kashi, is one of the oldest inhabited cities in the world. It is a sacred city for Hindus and a major pilgrimage site.",
+        "address": "Varanasi, Uttar Pradesh",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Varanasiganga.jpg/800px-Varanasiganga.jpg?20070329113639"
+      }
+    },
+    {
+      "type": "tourist-spot",
+      "id": "5",
+      "attributes": {
+        "name": "Mysore Palace",
+        "description": "The Mysore Palace is a magnificent royal palace located in Mysore, Karnataka. It is known for its Indo-Saracenic architecture and hosts a grand illumination every Sunday.",
+        "address": "Mysore, Karnataka",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_Morning.jpg"
+      }
+    },
+    {
+      "type": "tourist-spot",
+      "id": "6",
+      "attributes": {
+        "name": "Golden Temple",
+        "description": "The Golden Temple, also known as Sri Harmandir Sahib, is a sacred Sikh shrine in Amritsar. Its gold-plated exterior and serene surroundings attract millions of visitors.",
+        "address": "Golden Temple Rd, Atta Mandi, Katra Ahluwalia, Amritsar, Punjab 143006",
+        "image": "https://media.istockphoto.com/id/543179390/photo/golden-temple-the-main-sanctuary-of-sikhs-amritsar-india.jpg?s=612x612&w=0&k=20&c=s4bOWzg0e0ecBBPmuzIEShhrmMWFE16cnYlAZ7Nfdeg="
+      }
+    },
+    {
+      "type": "tourist-spot",
+      "id": "7",
+      "attributes": {
+        "name": "Goa Beaches",
+        "description": "Goa is famous for its stunning beaches along the Arabian Sea. It offers a mix of beautiful coastlines, vibrant nightlife, water sports, and a laid-back atmosphere.",
+        "address": "Goa",
+        "image": "https://media.istockphoto.com/id/621897226/photo/goa-beach-and-beautiful-sky-india.jpg?s=612x612&w=0&k=20&c=qDkllEUm9UpsXtfPlELdknkHMlgyT-kptQy6vAYFsM8="
+      }
+    },
+    {
+      "type": "tourist-spot",
+      "id": "8",
+      "attributes": {
+        "name": "Ajanta and Ellora Caves",
+        "description": "The Ajanta and Ellora Caves are a UNESCO World Heritage site in Maharashtra. They showcase magnificent rock-cut sculptures and ancient Buddhist, Jain, and Hindu temples.",
+        "address": "Aurangabad, Maharashtra",
+        "image": "https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2019/10/Ajanta-and-Ellora-Caves-Aurangabad.jpg?fit=800%2C600&ssl=1"
+      }
+    },
+    {
+      "type": "tourist-spot",
+      "id": "9",
+      "attributes": {
+        "name": "Kashmir",
+        "description": "Kashmir is often referred to as 'Paradise on Earth' due to its breathtaking natural beauty. It is known for its snow-capped mountains, serene lakes, and picturesque valleys.",
+        "address": "Jammu and Kashmir",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/26/e4/5b/frozen-suru-river-winter.jpg?w=700&h=500&s=1"
+      }
+    },
+    {
+      "type": "tourist-spot",
+      "id": "10",
+      "attributes": {
+        "name": "Hampi",
+        "description": "Hampi is a UNESCO World Heritage site located in Karnataka. It is home to the ruins of the Vijayanagara Empire and features ancient temples, monuments, and stunning landscapes.",
+        "address": "Hampi, Karnataka",
+        "image": "https://www.india.com/wp-content/uploads/2018/09/Vitthala-Temple-Hampi.jpg"
+      }
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import TravelGuides from './pages/TravelGuides';
 import Hotels from './pages/Hotels/Hotels.js';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
+
 import PlanNewTrip from './pages/PlanNewTrip';
 import Profile from './pages/Profile';
 import StartPlanning from './pages/StartPlanning';
@@ -18,6 +19,7 @@ import Package from './pages/Package';
 import BusBooking from './pages/BusBooking';
 
 import CardDetails from './components/CardDetails';
+
 
 
 function App() {

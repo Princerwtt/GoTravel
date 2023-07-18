@@ -1,30 +1,38 @@
 .searchDiv{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: whitesmoke;
+    align-items: center!important;
+    /* background: whitesmoke; */
     border-radius: 5px;    
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
     font-family: sans-serif;
     margin-left: 10px;
+    height:10vh;
+    padding: 5px;
+    margin-top: 5px;
 }
+.Search{
+    margin-right: 10px;
+    margin-bottom: 20px !important;
+}
+
 
 .exploreDiv{
     font-family: sans-serif;
     width: fit-content;
-    height: 75vh;
+    height: 100vh !important;
     display: flex;
     flex-direction: column;
     margin : 0 1rem;
-    border-radius: 5px;
+    border-radius: 1px;
     border: none !important;
     background: whitesmoke;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    /* overflow-y: scroll; */
  }
  
+ 
 .abcd{
-    display: flex;
+    display: block;
     justify-content: center !important;
 }
 
@@ -33,10 +41,15 @@
 }
 
 .contentDiv{
-    margin: 0 3rem;
-    background: #423f3e !important;
+    margin: 0 5rem;
+    background:none !important;
     overflow-y: scroll;
 }
+/* .contentDiv:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  } */
+
 
 
 .hrTag{
@@ -60,7 +73,7 @@
     margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
 }
 
 .siImg{
@@ -74,16 +87,14 @@
 }
 
 .siDesc{
-    /* display: flex;
-    flex-direction: column;
-    gap: 1px; */
     max-width: 190px;
     margin-bottom: 1px;
     border-right:5px solid lightgrey;
 }
 
-.siTitle {
-    color:#0071c2
+.siTitle h2{
+    color:#0071c2;
+    text-decoration:none;
 }
 .siDetails{
     flex:1;
@@ -143,6 +154,11 @@
     border:none;
     border-radius: 5px;
 }
+.siCheckButton:hover {
+    transform: scale(1.1);
+    background-color:lightgreen;
+    transition: transform 0.3s ease-in-out;
+  }
 
 .co{
     display: block;
@@ -151,15 +167,14 @@
 }
 .abcde{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .inputCity{
     width: 97%;
 }
 
 .siDesc2{
-    /* display: flex;
-    flex-direction: column;
-    gap: 1px; */
     max-width: 150px;
     margin-bottom: 1px;
     margin-top: 5px;
@@ -195,42 +210,188 @@
     justify-content: center !important;
     margin:5px;
     padding: 5px;
-    display: flex;
+    display: block !important;
     gap: 5px;
+    background: whitesmoke;
+    width: 180px !important;
+    height:60vh;
+    border-radius: 5px;
+    display:flex;
+    justify-content: space-between;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
 .inputCity{
   width: 13.2rem;
-  height: 20px;
+  height: 25px;
   padding: 5px;
   border: 5px solid #ccc
 }
+.inputCity:hover {
+    transform: scale(1.1);
+    background-color:lightgreen;
+    transition: transform 0.3s ease-in-out;
+  }
 .check{
-    width:6rem;
-    height: 20px;
+    width:13rem;
+    height: 25px;
     padding: 5px;
     border: 5px solid #ccc
 }
+.check:hover {
+    transform: scale(1.1);
+    background-color:lightgreen;
+    transition: transform 0.3s ease-in-out;
+  }
 .inputRooms{
-  width: 8rem;
+  width: 8.8rem;
   height: 20px;
   padding: 5px;
   border: 5px solid #ccc
 }
+.inputRooms:hover {
+    transform: scale(1.1);
+    background-color:lightgreen;
+    transition: transform 0.3s ease-in-out;
+  }
 .inputRating{
     width: 10rem;
     height: 40px;
     padding: 5px;
     border: 5px solid #ccc;
+    margin-left: 12px;
 }
+.inputRating:hover {
+    transform: scale(1.1);
+    background-color:lightgreen;
+    transition: transform 0.3s ease-in-out;
+  }
 .siCouple{
     width: 10rem;
     height: 40px;
     padding: 5px;
-    border: 5px solid #ccc;  
+    border: 5px solid #ccc;
+    margin-left: 12px;  
 }
+.siCouple:hover {
+    transform: scale(1.1);
+    background-color:lightgreen;
+    transition: transform 0.3s ease-in-out;
+  }
 .siDistanceAp{
     width: 10rem;
     height: 40px;
     padding: 5px;
-    border: 5px solid #ccc; 
+    border: 5px solid #ccc;
+    margin-left: 12px; 
+}
+.siDistanceAp:hover {
+    transform: scale(1.1);
+    background-color:lightgreen;
+    transition: transform 0.3s ease-in-out;
+  }
+.siAbcd{
+    display:flex;
+    justify-content: center!important;
+
+}
+.filter{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.sortButton{
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    padding:10px 10px 5px 5px;
+    border:none;
+    border-radius: 5px;
+    width: 200px;
+    justify-content: center!important;
+    margin-top:40px;
+    margin-left:740px;
+    
+}
+.sortButton:hover {
+    transform: scale(1.1);
+    background-color:lightgreen;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .clearButton{
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    padding:10px 10px 5px 5px;
+    border:none;
+    border-radius: 5px;
+    width: 160px;
+    justify-content: center!important;
+    margin-top:5px;
+    margin-left: 12px;
+  }
+  .clearButton:hover {
+    transform: scale(1.1);
+    background-color:lightgreen;
+    transition: transform 0.3s ease-in-out;
+  }
+
+@media only screen and (max-width: 600px) {
+   
+    .searchDiv {
+        margin-left: 5px;
+        height: 20vh;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+   
+    .searchDiv {
+        margin-left: 20px;
+        height: 15vh;
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+   
+    .exploreDiv {
+      height: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    
+    .exploreDiv {
+      height: 50vh;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    
+    .exploreDiv {
+      height: 60vh;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .contentDiv {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contentDiv {
+        margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .filterSection {
+        flex-direction: column;
+        align-items: center;
+    }
 }

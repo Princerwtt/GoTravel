@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
@@ -27,7 +26,7 @@ const MapboxMap = () => {
   }, []);
   
 
-  return <div id="map" style={{ height: '400px' }}></div>;
+  return <div id="map" style={{ height: '400px', width:'1200px',borderRadius:'10px' }}></div>;
 };
 
 export default MapboxMap;

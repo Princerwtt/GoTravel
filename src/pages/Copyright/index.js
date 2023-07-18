@@ -4,7 +4,7 @@ import Footer from '../../components/Footer';
 function Copyright() {
   return (
     <>
-        <div style={{margin:'2rem', fontFamily:'sans-serif',color:'whitesmoke'}} >
+        <div style={{margin:'2rem', fontFamily:'sans-serif',color:'#212529'}} >
             <div>
                 <h1>gotravel (Travelchime Inc.) Copyright Policy</h1>
                 <p>Our Copyright Policy specifies how copyright holders and their authorized agents can request for content to be removed, as well as the consequences to users who upload such content to goTravel.</p>

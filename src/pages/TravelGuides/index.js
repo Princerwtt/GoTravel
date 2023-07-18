@@ -29,9 +29,9 @@ function TravelGuides() {
       <br/>    
       <div>
         <div className='search-div' >
-          <h2 style={{background:'#423F3E'}} >Search your Holiday</h2>
-          <div style={{background:'#423F3E'}} >
-              <input type="text"  placeholder='Enter city name' className='input-city' onChange={event => setQuery(event.target.value)}/>
+          <h2 >Explore travel guides and itineraries</h2>
+          <div>
+              <input type="text"  placeholder='search for destination' className='input-city' onChange={event => setQuery(event.target.value)}/>
             </div>
             <br/>
         </div>
@@ -46,16 +46,16 @@ function TravelGuides() {
               place.filter(item => {
                 if (query === '') {
                   return item;
-                } else if (item.name.toLowerCase().includes(query.toLowerCase())) {
+                } else if (item.address.toLowerCase().includes(query.toLowerCase())) {
                   return item;
                 }
                 return null;
               }
               ).map(item => (
-                <Link to={`/travelguides/${item.id}`} key={item.id} className='name-img-p-div' style={{textDecoration: 'none'}}>
-                  <h2 style={{background:'#2B2B2B'}} >{item.name}</h2>
+                <Link to={`/travelguides/${item.id}`} key={item.id} className='name-img-p-div'>
                   <img src={item.image} alt={item.name} className='image' />
-                  {/* <p style={{background:'#2B2B2B'}} >{item.description}</p> */}
+
+                  <h2>{item.name}</h2>
                 </Link>
                 )
               )

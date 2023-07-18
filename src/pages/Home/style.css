@@ -1,28 +1,22 @@
-*{
-    background: #171010;
-}
 
 .new-trip-btn{
+
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background: #423F3E;
+    margin: 0 13rem;
+    background: none;
     border-radius: 5px;
 }
 
-.btn-link{
-    margin: 3rem 0 2rem 0 !important;
-    background: #423F3E !important;
-}
-
 .btn-pnt{
-    font-family: sans-serif;
-    color: lightgray;
-    background-color: #2B2B2B !important;
+    color: whitesmoke;
+    background: #f75940 !important;
     height: 3rem;
     width: 10rem;
+    font-weight: bold;
     font-family: sans-serif;
-    border: 1px solid #2B2B2B !important;
+    border: none;
     border-radius: 1.5rem;
     transition: 0.4s;
     cursor: pointer;
@@ -32,32 +26,29 @@
     transform: scale(1.2);
 }
 
-.new-trip-btn-h2{
+.new-trip-btn-p{
     font-family: sans-serif;
     margin:3rem 0 3rem 0;
-    background: #423F3E;
 }
 
 .hotel-search{
-    background: #423F3E;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0;
-    border-radius: 5px;
-}
-
-.search-option{
+    background: whitesmoke;
     display: flex;
     justify-content: space-around;
-    margin: 0 10rem;
-    background: #423F3E;
+    align-items: center;
+    border-radius: 5px;
 }
 
 .hotel-heading{
     font-family: sans-serif;
+    margin-left:5rem ;
+}
+
+.search-option{
     display: flex;
-    justify-content: center;
-    background: #423F3E;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
 }
 
 .input-city{
@@ -67,12 +58,11 @@
     display: flex;
     align-items: center;
     width: 20rem;
-    border: 3px solid white;
-    background: #2B2B2B;
+    border: 1px solid black;
 }
 
 .input-city::placeholder{
-    color: lightgray;
+    color: black;
     font-family: sans-serif;
 }
 
@@ -93,52 +83,68 @@
     transform: scale(1.2);
 }
 
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> main
 .explore-div{
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 0 3rem;
-    border-radius: 5px;
-    /* border: none !important; */
-    background: #423F3E;
-    
 }
 
 .explore-heading{
-    display: flex;
-    justify-content: center;
-    background: #423F3E;
-    border: 1px solid #423F3E;
-    border-radius:5px ;
+    margin-left: 4rem;
+    color: #212529;
+    font-weight: bold;
+    font-size: 3rem;    
+}
+
+.home-popu-dest-line{
+    margin-left: 4rem;
+    color: #212529;
+    font-weight: bold;
+    font-size: 2rem;
+
 }
 
  .content-div{
     margin: 0 3rem;
-    background: none !important;
-    background: #423F3E;
+    /* background: none !important; */
+    /* background: #423F3E; */
 }
 
 .main{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
+
     margin: auto;
-    grid-gap: 1rem;
-    background: #423F3E !important;
+    grid-gap: 2rem;
+    /* background: #423F3E !important; */
 
 }
 
 .name-img-p-div{
+    color: #212529;
     font-family: sans-serif;
-    /* border: 1px solid gray !important; */
+    border: 1px solid lightgray !important;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem 1rem;
-    background: #2B2B2B;
+    text-decoration: none;
+    background: white;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.4s;
+}
+
+.name-img-p-div:hover{
+    transform: scale(1.1);
 }
 
 .image{
@@ -150,24 +156,25 @@
 .hr-tag{
     width: 60rem;
     height: 0.2rem;
-    background: whitesmoke;
+    background: #212529;
     border-radius: 50%;
     border: 1px solid black;
 }
 
 .footer{
-    background: #423F3E;  
+    background: whitesmoke;  
     /* box-shadow: 0 2px 4px -1px rgba(0,0,0,1); */
     color: black;
     display: flex;
     justify-content: space-around;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     font-family: sans-serif;
-    /* border-top: 2px solid lightgray; */
+    border-top: 1px solid lightgray;
 }
 
 .link{
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
     font-family: sans-serif;
 }
+

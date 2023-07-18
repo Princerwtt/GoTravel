@@ -1,8 +1,14 @@
+body{
+  background: #f7f7ff;
+}
+body {
+  background-color: #f1f1f1;
+
+}
 .container{
   padding:10px;
   display:flex;
   margin-top: 3rem;
-  gap: 4rem;
 }
 
 .profile{
@@ -96,7 +102,7 @@
 }
 
 .formNew{
-  /* flex:0.45; */
+  flex:0.45;
   
 }
 

@@ -1,19 +1,36 @@
 .pnt-big-div-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 30rem;
+    /* align-items: center; */
+    /* height: 30rem; */
     font-family: sans-serif;
 }
 
 .pnt-main-container{
-    background: #423F3E;
-    width: 37rem;
-    height: 20rem;
+    /* width: 37rem; */
+    /* height: 10rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     border-radius: 5px;
+}
+
+.start-planning{
+    color: whitesmoke;
+    background: #f75940 !important;
+    height: 3rem;
+    width: 10rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 1.5rem;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+.start-planning:hover{
+    transform: scale(1.2);
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import { Navigate } from 'react-router-dom';
+import Footer from '../../components/Footer';
 
 export default function PlanNewTrip(props) {
 
@@ -21,24 +22,27 @@ export default function PlanNewTrip(props) {
   else{
     return (
       <>
+        <br />
         <div className='pnt-big-div-container'>
           <div className='pnt-main-container' >
-            <div style={{background:'#423F3E'}} >
-              <h1 style={{background:'#423F3E'}} >Plan a new trip</h1>
+            <div>
+              <h1>Plan a new trip</h1>
             </div>
-            <div style={{background:'#423F3E'}} >
+            <div>
               <input  value={placename} onChange={handlePlacenameChange} placeholder="Enter the city name" className='input-city'/>
-              {/* <input type="text" placeholder='Enter city name'  /> */}
             </div>
             <br />
-            <div style={{background:'#423F3E'}} >
-              <button onClick={handleStartplanning} className='search-booking'  >Start Planning</button>
-              {/* <button >Search for bookings</button>         */}
+            <div>
+              <button onClick={handleStartplanning} className='start-planning'  >Start Planning</button>
             </div>
           </div>
         </div>
-        
-        
+        <br />
+        <br />
+        <hr className='hr-tag' />
+        <br />
+        <Footer />
+        <br />            
       </>
     );
   }

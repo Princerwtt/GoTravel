@@ -1,3 +1,4 @@
+
 .container4 {
   background-image: url('https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
    background-size: cover; 
@@ -41,4 +42,10 @@
 .parag {
   font-size: 20px;
   color: #555;
+}
+.about-us-para{
+  color: #212529;
+  font-family: sans-serif;
+  font-weight: bold;
+
 }

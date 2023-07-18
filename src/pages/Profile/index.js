@@ -1,4 +1,6 @@
+
 import './style.css'
+
 import React, { useState } from "react";
 import { useAuth0 } from '@auth0/auth0-react';
 
@@ -13,9 +15,7 @@ const Profile = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setSubmitted(true);
-  };
-
- 
+  }; 
 
   const handleInputChange3 = (event) => {
     if (!submitted && !editing) {
@@ -34,14 +34,11 @@ const Profile = () => {
     setEditing(true);
   };
 
-
   return (
     <div className="container">
       <div className="profile">
         <div className="profileCard">
-       
           {user && <img src={user.picture} alt="User Profile" />}
-          {/* <h2>Shivam Kumar</h2> */}
           {user && <div>{user.name}</div>}
           <p>
             Personal Profile <br />
