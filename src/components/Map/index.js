@@ -1,36 +1,3 @@
-// import React, { useEffect } from 'react';
-// import mapboxgl from 'mapbox-gl';
-// import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
-
-// mapboxgl.accessToken = 'pk.eyJ1IjoicHJpbmNlLXJhd2F0IiwiYSI6ImNsand5ZmwwaDA2eDEzZG12MjB0NmV5MDcifQ.Wz2ruCZ5RQJVK1Op4Fz04A';
-
-// const MapboxMap = () => {
-//   useEffect(() => {
-//     const map = new mapboxgl.Map({
-//       container: 'map',
-//       style: 'mapbox://styles/mapbox/streets-v12',
-//       center: [-79.4512, 43.6568],
-//       zoom: 13
-//     });
-
-//     map.addControl(
-//       new MapboxGeocoder({
-//         accessToken: mapboxgl.accessToken,
-//         mapboxgl: mapboxgl
-//       })
-//     );
-
-//     return () => {
-//       map.remove(); // Clean up the map instance when the component unmounts
-//     };
-//   }, []);
-  
-
-//   return <div id="map" style={{ height: '400px', width:'1200px',borderRadius:'10px' }}></div>;
-// };
-
-// export default MapboxMap;
-
 import React, { useEffect, useState, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 // import "./styles.css";
@@ -99,7 +66,7 @@ export default function Mapbox() {
               title: location,
               description: data.features[0].place_name,
               image:
-                data.features[0].context[0]?.properties?.wikimedia?.images[0]
+                data.features[0].context[0]?.properties?.wikidata?.images[0]
             }
           };
 
@@ -131,9 +98,9 @@ export default function Mapbox() {
     // Set up the map when the component is mounted
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      style: "mapbox://styles/mapbox/light-v11",
+      style: 'mapbox://styles/mapbox/navigation-night-v1',
       center: [-96, 37.8],
-      zoom: 3
+      zoom: 10
     });
 
     setMap(map);
@@ -150,17 +117,33 @@ export default function Mapbox() {
           placeholder="Enter location..."
           value={location}
           onChange={(e) => setLocation(e.target.value)}
+          style={{
+            height: '20px',
+            border: '1px' ,
+            borderRadius: "2px"
+          }}
         />
-        <button onClick={searchLocationAndCenter}>Search</button>
+        <button style={{
+          color: 'whitesmoke',
+          background: '#f75940',
+          height: '2rem',
+          width: '6rem',
+          fontWeight: 'bold',
+          fontFamily: 'sans-serif',
+          border: 'none',
+          borderRadius: '20px',
+          transition: '0.4s',
+          cursor: 'pointer'
+        }} onClick={searchLocationAndCenter}>Search</button>
       </div>
       {searchResult && (
         <div id="searchResult">
           <h3>{searchResult.title}</h3>
           <p>{searchResult.description}</p>
-          <img src={searchResult.image} alt={searchResult.title} />
+          {/* <img src={searchResult.image} alt={searchResult.title} /> */}
         </div>
       )}
-      <div id="map" ref={mapContainerRef} />
+      <div id="map" ref={mapContainerRef} style={{ width: '100%', height: '500px' }} />
     </div>
   );
 }

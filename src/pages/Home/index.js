@@ -66,7 +66,7 @@ function Home() {
         <br />
         <br />
         {isAuthenticated && (
-        <div style={{display:'flex',justifyContent:'center'}} >
+        <div style={{}} >
           <Map/>
         </div>
         )}

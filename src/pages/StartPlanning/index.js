@@ -45,6 +45,7 @@ function StartPlanning(props) {
                   <p>{item.description}</p>
                 </div>
               ))}
+              {console.log(setQuery)}
           </div>
         </div>
       </div>

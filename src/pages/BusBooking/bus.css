@@ -1,7 +1,25 @@
-/* styles.css */
-/* * {
-  background: none;
-} */
+.booking-btn{
+  color: whitesmoke;
+ background: #f75940 !important;
+ height: 3rem;
+ width: 10rem;
+ font-weight: bold;
+ font-family: sans-serif;
+ border: none;
+ border-radius: 1.5rem;
+ transition: 0.4s;
+ cursor: pointer;
+}
+.booking-input{
+  height: 40px;
+  padding: 0 1rem;
+  border-radius: 0.5rem !important;
+  align-items: center;
+  width: 20rem;
+  margin: 20px;
+  border: 1px solid black;
+
+}
 .container {
   display: flex;
   flex-wrap: wrap;
