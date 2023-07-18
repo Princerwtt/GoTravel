@@ -100,7 +100,7 @@ export default function Mapbox() {
       container: mapContainerRef.current,
       style: 'mapbox://styles/mapbox/navigation-night-v1',
       center: [-96, 37.8],
-      zoom: 10
+      zoom: 5
     });
 
     setMap(map);
