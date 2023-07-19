@@ -98,7 +98,7 @@ export default function Mapbox() {
     // Set up the map when the component is mounted
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      style: 'mapbox://styles/mapbox/navigation-night-v1',
+      style: 'mapbox://styles/mapbox/light-v11',
       center: [-96, 37.8],
       zoom: 5
     });

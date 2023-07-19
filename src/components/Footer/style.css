@@ -14,3 +14,15 @@
     color: white;
     font-family: sans-serif;
 }
+.footer-btn{
+    color: whitesmoke;
+   background: #f75940 !important;
+   height: 3rem;
+   width: 10rem;
+   font-weight: bold;
+   font-family: sans-serif;
+   border: none;
+   border-radius: 1.5rem;
+   transition: 0.4s;
+   cursor: pointer;
+  }
