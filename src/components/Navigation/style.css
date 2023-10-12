@@ -37,7 +37,7 @@
 
 .pages-name:hover{
   border-bottom: 2px solid #F75940;
-  color: gray;
+  /* color: none !important; */
 }
 
  
@@ -85,7 +85,7 @@
 }
 
 .pages-name:hover {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
 }
 
 /* Styling for the logout button */
